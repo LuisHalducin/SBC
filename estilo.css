@@ -1,0 +1,194 @@
+/* Cambiar el color de fondo con un gradiente radial */
+/* Cambiar el color de fondo de la página con un gradiente */
+/* Definición de fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    background: linear-gradient(to right, #6abf69, #f1f1f1); /* Gradiente suave verde a gris claro */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para el título (h1) */
+h1 {
+    color: #2e7d32; /* Verde más oscuro */
+    font-size: 48px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el párrafo */
+p {
+    color: #2e7d32;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor principal */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Estilo para el formulario */
+.form-container {
+    width: 48%; /* Ajuste en el ancho */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilo para el contenedor de los resultados */
+.right-container {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para los resultados */
+#result, #timeResult {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la imagen */
+.right-container img {
+    width: 45%; /* Tamaño reducido */
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Estilo para el select */
+select {
+    font-size: 17px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 2px solid #4CAF50;
+    background-color: #ffffff;
+    width: 50%;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Efecto de hover en el select */
+select:hover {
+    border-color: #388e3c;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para las opciones dentro del desplegable */
+option {
+    padding: 12px;
+    background-color: #83be8f;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Cambio en el hover de las opciones */
+option:hover {
+    background-color: #2e7d32;
+    color: white;
+}
+
+/* Estilo para las etiquetas (label) */
+label {
+    display: block;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Estilo para la entrada numérica (input[type="number"]) */
+input[type="number"] {
+    font-size: 16px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 2px solid #4CAF50;
+    background-color: #f4f4f4;
+    width: 40%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en la entrada numérica */
+input[type="number"]:hover {
+    border-color: #66bb6a;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo para el botón de calcular */
+button {
+    padding: 14px 28px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Efecto cuando se pasa el cursor sobre el botón */
+button:hover {
+    background-color: #388e3c;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container, .right-container {
+        width: 90%;
+    }
+
+    .right-container img {
+        width: 100%;
+    }
+}
