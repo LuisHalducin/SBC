@@ -23,4 +23,4 @@ Una calculadora web interactiva para juegos de simulación. Permite a los usuari
 
 [LuisHalducin]
 
-![1000064843](https://github.com/LuisHalducin/SBC/blob/main/imagenes_SBC/1000064843.jpg?raw=true)
+![preview1](https://github.com/LuisHalducin/SBC/blob/main/imagenes_SBC/preview1.png?raw=true)
