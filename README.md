@@ -4,15 +4,15 @@ Una calculadora web interactiva para juegos de simulación. Permite a los usuari
 
 ## Tecnologías usadas
 
-- HTML5
-- CSS3
-- JavaScript
+- HTML5  
+- CSS3  
+- JavaScript  
 - Despliegue en Netlify
 
 ## Funcionalidades
 
-- Interfaz amigable y responsiva.
-- Cálculos automáticos en tiempo real.
+- Interfaz amigable y responsiva.  
+- Cálculos automáticos en tiempo real.  
 - Diseño limpio y fácil de usar.
 
 ## Enlace en vivo
@@ -23,3 +23,4 @@ Una calculadora web interactiva para juegos de simulación. Permite a los usuari
 
 [LuisHalducin]
 
+![1000064843](https://github.com/LuisHalducin/SBC/blob/main/imagenes_SBC/1000064843.jpg?raw=true)
