@@ -22,4 +22,4 @@ Una calculadora web interactiva para juegos de simulación. Permite a los usuari
 ## Autor
 
 [LuisHalducin]
-![1000064843](https://github.com/user-attachments/assets/b3224d06-cc22-46a7-9d49-88de0ff5bd57)
+
