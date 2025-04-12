@@ -1,5 +1,3 @@
-![1000064843](https://github.com/user-attachments/assets/6b29b510-e1f8-4fca-8db9-9685b2724250)
-![1000064842](https://github.com/user-attachments/assets/342e31e0-0b52-450a-b659-2fb9f7c71be9)
 # SimBuild Calculator
 
 Una calculadora web interactiva para juegos de simulación. Permite a los usuarios ingresar datos personalizados y obtener resultados automáticamente.
@@ -24,3 +22,4 @@ Una calculadora web interactiva para juegos de simulación. Permite a los usuari
 ## Autor
 
 [LuisHalducin]
+![1000064843](https://github.com/user-attachments/assets/b3224d06-cc22-46a7-9d49-88de0ff5bd57)
