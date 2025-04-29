@@ -395,13 +395,15 @@ function calcularCosto() {
 
     const costoFormateado = costoTotal.toLocaleString();
 
-    document.getElementById('result').innerText = `Costo Total: $ ${costoFormateado}`;
-    document.getElementById('timeResult').innerText = `Tiempo Total de Construcción: ${dias} días ${horasRestantes} horas (${horasTotales} horas)`;
+    document.getElementById('result').innerText = `Total Cost: $ ${costoFormateado}`;
+document.getElementById('timeResult').innerText = `Total Construction Time: ${dias} days ${horasRestantes} hours (${horasTotales} hours)`;
 
-    button.classList.remove('loading');
-    button.disabled = false;
+document.getElementById('resultSection').scrollIntoView({ behavior: 'smooth' });
 
-    mostrarToast("¡Cálculo realizado con éxito!", "success");
+button.classList.remove('loading');
+button.disabled = false;
+
+mostrarToast("Calculation completed successfully!", "success");
 }, 1200);
 }
 // Función para mostrar toasts
