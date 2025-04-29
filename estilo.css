@@ -1,18 +1,17 @@
 /* Cambiar el color de fondo con un gradiente radial */
-/* Cambiar el color de fondo de la página con un gradiente */
 /* Definición de fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
-    background: linear-gradient(to right, #6abf69, #f1f1f1); /* Gradiente suave verde a gris claro */
+    background: linear-gradient(to right, #6abf69, #f1f1f1);
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Estilo para el título (h1) */
+/* Título principal */
 h1 {
-    color: #2e7d32; /* Verde más oscuro */
+    color: #2e7d32;
     font-size: 48px;
     text-align: center;
     font-weight: 600;
@@ -23,7 +22,7 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para el párrafo */
+/* Párrafos */
 p {
     color: #2e7d32;
     font-size: 16px;
@@ -44,9 +43,9 @@ p {
     align-items: flex-start;
 }
 
-/* Estilo para el formulario */
+/* Formulario */
 .form-container {
-    width: 48%; /* Ajuste en el ancho */
+    width: 48%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -54,7 +53,7 @@ p {
     margin-top: 20px;
 }
 
-/* Estilo para el contenedor de los resultados */
+/* Contenedor de resultados */
 .right-container {
     width: 48%;
     display: flex;
@@ -67,7 +66,7 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para los resultados */
+/* Resultados */
 #result, #timeResult {
     font-size: 18px;
     color: #333;
@@ -81,14 +80,14 @@ p {
     margin-bottom: 20px;
 }
 
-/* Estilo para la imagen */
+/* Imagen */
 .right-container img {
-    width: 45%; /* Tamaño reducido */
+    width: 45%;
     height: auto;
     border-radius: 15px;
 }
 
-/* Estilo para el select */
+/* Select */
 select {
     font-size: 17px;
     padding: 12px 20px;
@@ -100,13 +99,12 @@ select {
     transition: all 0.3s ease;
 }
 
-/* Efecto de hover en el select */
 select:hover {
     border-color: #388e3c;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Estilo para las opciones dentro del desplegable */
+/* Opciones */
 option {
     padding: 12px;
     background-color: #83be8f;
@@ -114,13 +112,12 @@ option {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Cambio en el hover de las opciones */
 option:hover {
     background-color: #2e7d32;
     color: white;
 }
 
-/* Estilo para las etiquetas (label) */
+/* Etiquetas */
 label {
     display: block;
     font-size: 18px;
@@ -129,7 +126,7 @@ label {
     color: #333;
 }
 
-/* Estilo para la entrada numérica (input[type="number"]) */
+/* Input numérico */
 input[type="number"] {
     font-size: 16px;
     padding: 12px 15px;
@@ -146,49 +143,100 @@ input[type="number"] {
     transition: all 0.3s ease;
 }
 
-/* Efecto hover en la entrada numérica */
 input[type="number"]:hover {
     border-color: #66bb6a;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Estilo para el botón de calcular */
+/* Botón */
 button {
-    padding: 14px 28px;
-    font-size: 18px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
     background-color: #4CAF50;
     color: white;
-    border: none;
-    border-radius: 12px;
     cursor: pointer;
-    width: 40%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.1s;
 }
 
-/* Efecto cuando se pasa el cursor sobre el botón */
 button:hover {
-    background-color: #388e3c;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #45a049;
 }
 
-/* Estilos para pantallas pequeñas */
+button:active {
+    transform: scale(0.95);
+    background-color: #ffcc00;
+    transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+/* Animación de carga */
+button.loading {
+    background-color: #f0ad4e;
+    cursor: not-allowed;
+}
+
+button.loading::after {
+    content: " ...";
+    animation: loadingAnimation 1.5s infinite linear;
+}
+
+@keyframes loadingAnimation {
+    0% { content: " ..."; }
+    50% { content: " .."; }
+    100% { content: " ."; }
+}
+
+/* Estilos responsivos para móviles */
 @media screen and (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+        padding: 15px;
+    }
+
+    p {
+        font-size: 14px;
+        padding: 12px;
+    }
+
     .main-container {
         flex-direction: column;
         align-items: center;
+        padding: 10px;
     }
 
-    .form-container, .right-container {
+    .form-container,
+    .right-container {
+        width: 95%;
+        margin-top: 10px;
+    }
+
+    select,
+    input[type="number"] {
         width: 90%;
+        font-size: 15px;
+    }
+
+    label {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    button {
+        width: 90%;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    #result, #timeResult {
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+        min-width: unset;
     }
 
     .right-container img {
-        width: 100%;
+        width: 90%;
+        margin-top: 15px;
     }
 }
