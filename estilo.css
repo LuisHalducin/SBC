@@ -240,3 +240,59 @@ button.loading::after {
         margin-top: 15px;
     }
 }
+#google_translate_element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: fit-content;
+    margin: 20px auto;
+    font-family: 'Segoe UI', sans-serif;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Ajustes internos del widget */
+  .goog-te-gadget {
+    font-size: 15px;
+    color: #444;
+  }
+  
+  .goog-te-menu-value span {
+    color: #222 !important;
+  }
+  
+  /* El botón de idioma desplegable */
+  .goog-te-menu-value {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .goog-te-menu-value:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Menu flotante del traductor */
+  .goog-te-menu-frame {
+    border-radius: 8px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15) !important;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    #google_translate_element {
+      flex-direction: column;
+      padding: 8px 12px;
+    }
+  
+    .goog-te-menu-value {
+      font-size: 14px;
+    }
+  }
+  
